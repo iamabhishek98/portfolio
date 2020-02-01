@@ -1107,6 +1107,295 @@ img.zoom-img:hover {
 
 } */
 
+/*-- projects --*/
+.img-raised {
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+			box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  }
+.gallery .cc-porfolio-image figure {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+  }
+  
+  .gallery .cc-porfolio-image figure img {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	opacity: 1;
+  }
+  
+  .gallery .cc-porfolio-image figure figcaption {
+	position: absolute;
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .gallery .cc-porfolio-image figure figcaption,
+  .gallery .cc-porfolio-image figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .gallery .cc-porfolio-image figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+  }
+  
+  .gallery .cc-porfolio-image figure .h4,
+  .gallery .cc-porfolio-image figure p {
+	margin: 0;
+  }
+  
+  .gallery figure.cc-effect figcaption::before,
+  .gallery figure.cc-effect figcaption::after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+  }
+  
+  .gallery figure.cc-effect figcaption::before {
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	-webkit-transform: scale(0, 0);
+	transform: scale(0, 0);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+  }
+  
+  .gallery figure.cc-effect figcaption::after {
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	-webkit-transform: scale(0, 0);
+	transform: scale(0, 0);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+  }
+  
+  .gallery figure.cc-effect .h4 {
+	margin-top: 25%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	transition: transform 0.35s, -webkit-transform 0.35s;
+	opacity: 0;
+	font-size: 28px; /* font size for project title*/
+  }
+  
+  @media (max-width: 480px) {
+	.gallery figure.cc-effect .h4 {
+	  font-size: 150px;
+	}
+  }
+  
+  .gallery figcaption .container {
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+  }
+  
+  .gallery figure.cc-effect p,
+  .gallery figure.cc-effect button {
+	font-size: 18px; /* font size for below project text*/
+	padding: 0.5em 2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+	opacity: 0;
+  }
+  
+  .gallery figure.cc-effect img,
+  .gallery figure.cc-effect .h4 { /*change zoom level*/
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+  }
+  
+  .gallery figure.cc-effect img,
+  .gallery figure.cc-effect figcaption::before,
+  .gallery figure.cc-effect figcaption::after,
+  .gallery figure.cc-effect p {
+	-webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+	transition: opacity 0.25s, -webkit-transform 0.25s;
+	transition: opacity 0.25s, transform 0.25s;
+	transition: opacity 0.25s, transform 0.25s, -webkit-transform 0.25s;
+  }
+
+  .gallery figure.cc-effect:hover img {
+	opacity: 1;
+	filter:blur(4px); /* to blur the image*/
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+  }
+  
+  .gallery figure.cc-effect:hover figcaption::before,
+  .gallery figure.cc-effect:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+  }
+  
+  .gallery figure.cc-effect:hover figcaption:before {
+	background: rgba(27, 23, 23, 0.5);
+  }
+  
+  .gallery figure.cc-effect:hover .h4,
+  .gallery figure.cc-effect:hover p,
+  .gallery figure.cc-effect:hover button {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	color: #fff;
+  }
+  
+  .gallery figure.cc-effect:hover figcaption::after,
+  .gallery figure.cc-effect:hover .h4,
+  .gallery figure.cc-effect:hover p,
+  .gallery figure.cc-effect:hover img {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+  }
+
+  .modal-open {
+	overflow: hidden;
+  }
+  .modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+  }
+  .modal.fade .modal-dialog {
+	-webkit-transition: -webkit-transform .3s ease-out;
+		 -o-transition:      -o-transform .3s ease-out;
+			transition:         transform .3s ease-out;
+	-webkit-transform: translate(0, -25%);
+		-ms-transform: translate(0, -25%);
+		 -o-transform: translate(0, -25%);
+			transform: translate(0, -25%);
+  }
+  .modal.in .modal-dialog {
+	-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		 -o-transform: translate(0, 0);
+			transform: translate(0, 0);
+  }
+  .modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+  }
+  .modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 10px;
+  }
+  .modal-content {
+	position: relative;
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 6px;
+	outline: 0;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+			box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  }
+  .modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+  }
+  .modal-backdrop.fade {
+	filter: alpha(opacity=0);
+	opacity: 0;
+  }
+  .modal-backdrop.in {
+	filter: alpha(opacity=50);
+	opacity: .5;
+  }
+  .modal-header {
+	min-height: 16.42857143px;
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+  }
+  .modal-header .close {
+	margin-top: -2px;
+  }
+  .modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+  }
+  .modal-body {
+	position: relative;
+	padding: 15px;
+	text-align: left;
+  }
+  .modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+  }
+  .modal-footer .btn + .btn {
+	margin-bottom: 0;
+	margin-left: 5px;
+  }
+  .modal-footer .btn-group .btn + .btn {
+	margin-left: -1px;
+  }
+  .modal-footer .btn-block + .btn-block {
+	margin-left: 0;
+  }
+  .modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+  }
+  @media (min-width: 768px) {
+	.modal-dialog {
+	  width: 700px;
+	  margin: 30px auto;
+	}
+	.modal-content {
+	  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+			  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	}
+	.modal-sm {
+	  width: 300px;
+	}
+  }
+  @media (min-width: 992px) {
+	.modal-lg {
+	  width: 900px;
+	}
+  }
+
+/*-- //projects --*/ 
 
 /*-- skills --*/ 
 .skills-agileinfo {
