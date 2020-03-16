@@ -5,6 +5,7 @@
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -5028,7 +5029,7 @@ a.thumbnail.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
 }
-.progress-bar {
+.progress-bar, .progress-bar1, .progress-bar2 {
   float: left;
   width: 0;
   height: 100%;
@@ -5051,7 +5052,7 @@ a.thumbnail.active {
   -webkit-background-size: 40px 40px;
           background-size: 40px 40px;
 }
-.progress.active .progress-bar,
+.progress.active .progress-bar, .progress-bar1.active, .progress-bar2.active,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
        -o-animation: progress-bar-stripes 2s linear infinite;
