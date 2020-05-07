@@ -989,7 +989,12 @@ ul.top-links li a i.fa:hover {
 /*-- //social-icons --*/
 /*-- comment section --*/
 section.comment-w3l {
-	background:#171717;
+	background:  linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url(../images/bg.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
 	padding: 5em 0;
 }
 section.comment-w3l h5 a {
