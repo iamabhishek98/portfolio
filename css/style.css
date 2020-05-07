@@ -887,7 +887,7 @@ nav.w3-navbar {
 
 
 .w3l-banner {
-    background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../images/bg.jpg) no-repeat 0px 0px;
+    background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/bg.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -989,7 +989,7 @@ ul.top-links li a i.fa:hover {
 /*-- //social-icons --*/
 /*-- comment section --*/
 section.comment-w3l {
-	background:  linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url(../images/bg.jpg) no-repeat 0px 0px;
+	background:  linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url(../images/contact.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
