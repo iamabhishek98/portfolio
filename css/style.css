@@ -873,6 +873,11 @@ nav.w3-navbar {
     color: #fff;
     outline: 2px solid #078b3e;
 }
+.w3-socials a span.fa.fa-skype:hover {
+    background: #00b0ed;
+    color: #fff;
+    outline: 2px solid #00b0ed;
+}
 
 .w3-socials ul li {
     display: inline-flex;
