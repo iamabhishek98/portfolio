@@ -9,10 +9,12 @@ import ExperiencesContainer from "./containers/Experiences/Experiences";
 import EducationContainer from "./containers/Education/Education";
 import ContactContainer from "./containers/Contact";
 import FooterContainer from "./containers/Footer";
+import ProjectsContainer from "./containers/Projects/Projects";
 
 // ReactDOM.render(<NavContainer />, document.getElementById("home"));
 ReactDOM.render(<AboutContainer />, document.getElementById("about"));
 ReactDOM.render(<SkillsContainer />, document.getElementById("skills"));
+ReactDOM.render(<ProjectsContainer />, document.getElementById("projects"));
 ReactDOM.render(
   <ExperiencesContainer />,
   document.getElementById("experiences")

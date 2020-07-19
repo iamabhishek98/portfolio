@@ -1,12 +1,11 @@
 import React from "react";
 
-const Skill = ({ Orientation, Text, Percent }) => {
-  const data_aos = `fade-${Orientation.toLowerCase()}`;
+const Skill = ({ Text, Percent }) => {
   const style = {
     width: `${Percent}%`,
   };
   return (
-    <div data-aos={data_aos}>
+    <div>
       <h6>
         {Text} <span> {Percent}% </span>
       </h6>

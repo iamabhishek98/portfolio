@@ -1,5 +1,40 @@
-.hello {
-  height: 100%;
+.fa-github,
+.fa-link {
+  color: #337ab7;
+}
+
+.fa-github:hover,
+.fa-link:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.rtos_image_1,
+.rtos_vid,
+.audiov_image_1,
+.audiov_image_2,
+.audiov_image_3,
+.audiov_image_4,
+.parkevelution_image_1,
+.parkevelution_image_2,
+.parkevelution_vid,
+.alex_image_1,
+.alex_image_2,
+.alex_image_3,
+.mbot_image_1,
+.mbot_vid {
   width: 100%;
-  margin: auto;
+  margin-bottom: 1em;
+}
+
+.nustartup_image_1 {
+  width: 80%;
+}
+
+.archduke_image_1 {
+  width: 70%;
+}
+
+.rideshare_image_1 {
+  width: 100%;
 }
