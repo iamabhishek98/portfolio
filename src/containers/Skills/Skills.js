@@ -15,11 +15,11 @@ class SkillsContainer extends Component {
                   data-aos="fade-right"
                 >
                   <h4> Programming </h4>
-                  <Skill Text="Python" Percent="80" />
-                  <Skill Text="Java" Percent="70" />
+                  <Skill Text="JavaScript | TypeScript" Percent="95" />
+                  <Skill Text="Python" Percent="90" />
+                  <Skill Text="Java" Percent="75" />
                   <Skill Text="C | C++" Percent="70" />
-                  <Skill Text="Golang" Percent="40" />
-                  <Skill Text="JavaScript" Percent="60" />
+                  <Skill Text="Golang" Percent="60" />
                   <Skill Text="Verilog" Percent="60" />
                   <br />
                 </div>
@@ -28,12 +28,12 @@ class SkillsContainer extends Component {
                   data-aos="fade-left"
                 >
                   <h4> Web</h4>
-                  <Skill Text="HTML5 | CSS" Percent="80" />
-                  <Skill Text="React.js" Percent="60" />
-                  <Skill Text="Node.js" Percent="60" />
-                  <Skill Text="Express.js" Percent="50" />
-                  <Skill Text="Ruby On Rails" Percent="40" />
-                  <Skill Text="PostgreSQL" Percent="85" />
+                  <Skill Text="HTML5 | CSS" Percent="90" />
+                  <Skill Text="React.js" Percent="80" />
+                  <Skill Text="Node.js" Percent="95" />
+                  <Skill Text="Nest.js" Percent="90" />
+                  <Skill Text="PostgreSQL" Percent="90" />
+                  <Skill Text="MongoDB" Percent="85" />
 
                   <div className="clearfix"></div>
                 </div>
@@ -46,8 +46,8 @@ class SkillsContainer extends Component {
                 data-aos="fade-right"
               >
                 <h4> Hardware </h4>
+                <Skill Text="Arduino" Percent="80" />
                 <Skill Text="Raspberry Pi" Percent="75" />
-                <Skill Text="Arduino" Percent="75" />
                 <Skill Text="Cortex-M3" Percent="70" />
                 <Skill Text="Basys3" Percent="60" />
               </div>
@@ -57,10 +57,10 @@ class SkillsContainer extends Component {
                 data-aos="fade-left"
               >
                 <h4> Others </h4>
-                <Skill Text="OpenCV" Percent="40" />
-                <Skill Text="Git" Percent="85" />
-                <Skill Text="Linux" Percent="75" />
-                <Skill Text="Microsoft Office" Percent="85" />
+                <Skill Text="Git" Percent="95" />
+                <Skill Text="Linux" Percent="80" />
+                <Skill Text="FreeRTOS" Percent="70" />
+                <Skill Text="Microsoft Office" Percent="90" />
 
                 <div className="clearfix"></div>
               </div>
