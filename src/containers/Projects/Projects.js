@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import ProjectModal from "./ProjectModalTemplate";
 import "./Projects.css";
 import Project from "./ProjectTemplate";
-import ProjectModal from "./ProjectModalTemplate";
 
 class ProjectsContainer extends Component {
   constructor() {
@@ -90,7 +90,45 @@ class ProjectsContainer extends Component {
   };
 
   render() {
-    const Rtos = {
+    const smartdance = {
+      Id: "smartdance",
+      Title: "SmartDance",
+      Github:
+        "https://github.com/iamabhishek98/capstone_proj/blob/master/Final Design Report.pdf",
+      Highlights: "Python | C++ | Bluno Beetle (Arduino)",
+      Duration: "Jan 2021 - May 2021",
+      Images: ["images/projects/smartdance/smartdance.jpg"],
+      Description: [
+        `Collaborated in a team of 6 to construct a smart wearable system to instantly 
+        identify dance moves and localize dancer positions using ML`,
+        `Designed internal communications subcomponent which involved establishing multithreaded 
+        BLE communication channels between multiple Bluno Beetles connected to sensors and a 
+        laptop to transmit sensor data as TCP packets`,
+        `Implemented three-way handshake, network time synchronization and error detection 
+        protocols to attain a reliable data rate of 25 Hz between Beetles and laptop, allowing 
+        for fast and accurate dance move classification`,
+      ],
+    };
+
+    const fakenews = {
+      Id: "fakenews",
+      Title: "Fake News Bot",
+      Github:
+        "https://github.com/CS3244-MachineLearning-Project-AY2021/Fake_News_Detection/blob/master/Detection_of_Fake_News_Using_Supervised_Learning_Techniques.pdf",
+      Highlights: "Python | Scikit-learn",
+      Duration: "Jan 2021 - May 2021",
+      Images: ["images/projects/fakenews/fakenews.jpg"],
+      Description: [
+        `Collaborated in a team of 6 to develop a telegram bot to detect fake news using NLP`,
+        `Pre-processed datasets by employing techniques like stemming using NLTK and feature 
+        extraction using TFIDF to improve classification results`,
+        `Pioneered experimentation with various ML algorithms like Naïve Bayes and Passive-Aggressive 
+        classifiers and achieved validation and test accuracies > 90% using novel ML techniques like 
+        ensemble learning`,
+      ],
+    };
+
+    const rtos = {
       Index: 0,
       Id: "rtos",
       Title: "RTOS RC Robot",
@@ -100,12 +138,13 @@ class ProjectsContainer extends Component {
       Images: ["images/projects/rtos/rtos_main.jpg"],
       Video: ["images/projects/rtos/rtos_vid.mp4"],
       Description: [
-        `Developed a robot running on RTOS (Real-Time Operating System) and designed
-          a native Android application to tele-operate it via a Bluetooth connection`,
+        `Built a robot which ran on RTOS (Real-Time Operating System)`,
+        `Used message queues to efficiently handle and context switch between multiple concurrent processes`,
+        `Developed an android application to tele-operate the robot over Bluetooth`,
       ],
     };
 
-    const Nustartup = {
+    const nustartup = {
       Id: "nustartup",
       Title: "NUStartup",
       Github: "https://github.com/iamabhishek98/NUStartup",
@@ -119,23 +158,22 @@ class ProjectsContainer extends Component {
       ],
     };
 
-    const ArchDuke = {
+    const archduke = {
       Id: "archduke",
       Title: "ArchDuke",
       Github: "https://github.com/iamabhishek98/main",
-      Highlights: "Java",
-      Duration: "Jan 2020",
+      Highlights: "Java | JUnit",
+      Duration: "Oct 2019 - Nov 2019",
       Images: ["images/projects/archduke/archduke.jpg"],
       Description: [
-        `Developed a command-line application in a team of 5 that seeks to solve project 
-        management issues amongst team leaders`,
-        `Adhered to Software Engineering Principles and Design Patterns when implementing features`,
-        `Carried out several forms of code-based testing and wrote detailed documentation 
-        for the User and Developer Guide`,
+        `Collaborated in a team of 5 to develop a command-line application, using agile methodology, 
+        to solve project management issues amongst team leaders`,
+        `Implemented features while adhering to software engineering principles and design patterns`,
+        `Carried out extensive unit/integration testing while  documenting user and developer guides`,
       ],
     };
 
-    const Audiov = {
+    const audiov = {
       Index: 1,
       Id: "audiov",
       Title: "Real-Time Audio Visualizer",
@@ -149,22 +187,23 @@ class ProjectsContainer extends Component {
         "images/projects/audiov/audiov_3.jpg",
       ],
       Description: [
-        `Developed visual and audio analysis applications based on processing of an audio 
-        input signal on a Basys3 FPGA`,
-        `These applications include different ways to visualize the signal and accurate 
-        calculation of the frequency`,
+        `Programmed a FPGA to visualize audio input from a microphone in unique ways with the ability 
+        to interactively mix and overlay different visualizations`,
+        `Developed a frequency detector algorithm with an accuracy > 95% and programmed a 7SEG display 
+        to show the detected frequency`,
       ],
     };
 
     // DONT FORGET TO REMOVE BOLD
-    const Parkevelution = {
+    const parkevelution = {
       Index: 2,
       Id: "parkevelution",
       Title: "ParkEvelution",
-      Github: "https://github.com/iamabhishek98/Parkevelution_App",
-      Link:
-        "https://play.google.com/store/apps/details?id=com.OrbitApps.parkevolution1&hl=en",
-      Highlights: "Java | Node.js | PHP | MySQL | Raspberry Pi",
+      Github:
+        "https://github.com/iamabhishek98/Parkevelution_App/blob/master/README.md",
+      Link: "https://play.google.com/store/apps/details?id=com.OrbitApps.parkevolution1&hl=en",
+      Highlights:
+        "Java | JavaScript | PHP | Android Studio | Node.js | MySQL | Raspberry Pi",
       Duration: "May 2019 – Aug 2019",
       Images: [
         "images/projects/parkevelution/parkevelution_main.jpg",
@@ -173,39 +212,39 @@ class ProjectsContainer extends Component {
       Video: ["images/projects/parkevelution/parkevelution_vid.mp4"],
       Description: [
         `parkevelution first line`,
-        `Developed a native Android application in  a team of 2 that seeks to solve all 
-        the parking problems of Singaporean Drivers`,
-        `Used Google Maps API to visually display real-time parking information provided 
-        by Data.gov.sg APIs`,
-        `Used a port-forwarded Raspberry Pi as a database server for collecting parking 
-        lot information in real-time`,
-        `Implemented algorithms to suggest optimal carparks and predict future parking 
-        lot availability based on trends in the database`,
+        `Devised a mobile solution to solve common problems Singaporean drivers face while trying 
+        to park, by providing real-time parking lot availability, parking rates and nearest car 
+        parks to a given location`,
+        `Implemented novel algorithms to recommend optimal car parks and predict future parking 
+        lot availability`,
+        `Developed and hosted a backend server on a port-forwarded Raspberry Pi to scrape real-time 
+        car park information and used an interactive map to display user location and relevant car park information`,
+        `Successfully launched app on Google Play Store and received positive response from users`,
       ],
     };
 
-    const Rideshare = {
+    const rideshare = {
       Id: "rideshare",
       Title: "RideShare",
       Github: "https://github.com/iamabhishek98/carpool",
-      Highlights: "Node.js | PostgreSQL",
+      Highlights: "React.js | Node.js | PostgreSQL",
       Duration: "Oct 2019 – Nov 2019",
       Images: ["images/projects/rideshare/rideshare.jpg"],
       Description: [
-        `Led a team of 4 to build a mock carpooling application`,
-        `Drew Entity-Relational diagrams to visualize and designed the relational database 
-        needed to support the application`,
-        `Wrote multiple complex SQL queries to process and retrieve information from the 
-        database in real-time`,
+        `Managed a group of 4 to develop a web-based carpooling system to enable drivers to 
+        advertise rides and passengers to bid for rides`,
+        `Designed Entity-Relational diagrams to visualize complex relational database relations 
+        and wrote complex SQL queries to efficiently process and retrieve information from the database`,
       ],
     };
 
-    const Alex = {
+    const alex = {
       Index: 3,
       Id: "alex",
       Title: "Alex",
       Github: "https://github.com/iamabhishek98/CG1112_Alex",
-      Highlights: "C++ | SLAM | OpenCV | Arduino |<br> Raspberry Pi | Li",
+      Highlights:
+        "C++ | Arduino | OpenCV | Raspberry Pi | Hector SLAM | RPLiDAR",
       Duration: "Mar 2019 – May 2019",
       Images: [
         "images/projects/alex/alex_main.jpg",
@@ -220,7 +259,7 @@ class ProjectsContainer extends Component {
       ],
     };
 
-    const Mbot = {
+    const mbot = {
       Index: 4,
       Id: "mbot",
       Title: "mBot",
@@ -251,37 +290,47 @@ class ProjectsContainer extends Component {
               <div className="ml-auto mr-auto">
                 <div className="row">
                   <div className="col-md-6">
-                    <Project ProjectDetails={Rtos} />
-                    <Project ProjectDetails={Nustartup} />
-                    <Project ProjectDetails={ArchDuke} />
-                    <Project ProjectDetails={Audiov} />
+                    <Project ProjectDetails={fakenews} />
+                    <Project ProjectDetails={parkevelution} />
+                    <Project ProjectDetails={rideshare} />
+                    {/* <Project ProjectDetails={nustartup} /> */}
+                    <Project ProjectDetails={archduke} />
                   </div>
                   <div className="col-md-6">
-                    <Project ProjectDetails={Parkevelution} />
-                    <Project ProjectDetails={Rideshare} />
-                    <Project ProjectDetails={Alex} />
-                    <Project ProjectDetails={Mbot} />
+                    <Project ProjectDetails={smartdance} />
+                    <Project ProjectDetails={rtos} />
+                    <Project ProjectDetails={alex} />
+                    <Project ProjectDetails={mbot} />
+                    <Project ProjectDetails={audiov} />
                   </div>
-                  <ProjectModal ProjectDetails={Rtos} Functions={Functions} />
                   <ProjectModal
-                    ProjectDetails={Nustartup}
+                    ProjectDetails={fakenews}
+                    Functions={Functions}
+                  />
+                  <ProjectModal ProjectDetails={rtos} Functions={Functions} />
+                  {/* <ProjectModal
+                    ProjectDetails={nustartup}
+                    Functions={Functions}
+                  /> */}
+                  <ProjectModal
+                    ProjectDetails={archduke}
+                    Functions={Functions}
+                  />
+                  <ProjectModal ProjectDetails={audiov} Functions={Functions} />
+                  <ProjectModal
+                    ProjectDetails={smartdance}
                     Functions={Functions}
                   />
                   <ProjectModal
-                    ProjectDetails={ArchDuke}
-                    Functions={Functions}
-                  />
-                  <ProjectModal ProjectDetails={Audiov} Functions={Functions} />
-                  <ProjectModal
-                    ProjectDetails={Parkevelution}
+                    ProjectDetails={parkevelution}
                     Functions={Functions}
                   />
                   <ProjectModal
-                    ProjectDetails={Rideshare}
+                    ProjectDetails={rideshare}
                     Functions={Functions}
                   />
-                  <ProjectModal ProjectDetails={Alex} Functions={Functions} />
-                  <ProjectModal ProjectDetails={Mbot} Functions={Functions} />
+                  <ProjectModal ProjectDetails={alex} Functions={Functions} />
+                  <ProjectModal ProjectDetails={mbot} Functions={Functions} />
                 </div>
               </div>
             </div>
