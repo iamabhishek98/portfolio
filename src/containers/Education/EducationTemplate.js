@@ -46,7 +46,7 @@ const Education = ({ SchoolDetails }) => {
   return (
     <div
       className="education-agile-grids"
-      //   style="margin-left:2em"
+      // style={{ marginLeft: "2em" }}
       data-aos="flip-left"
     >
       <div

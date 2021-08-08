@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Education from "./EducationTemplate";
 import "./Education.css";
+import Education from "./EducationTemplate";
 
 class EducationContainer extends Component {
   render() {
@@ -12,15 +12,16 @@ class EducationContainer extends Component {
       Duration: "2018 – Present",
       Details: {
         "Major:": "Computer Engineering",
-        "Expected Graduation Date:": "May 2022",
-        "Cumulative Average Point:": "<em>4.25 / 5.00</em>",
+        "Minor:": "Financial Mathematics",
+        "Expected Year of Graduation:": "2022",
         BR: "Relevant Coursework:",
         "Relevant Coursework:": [
           "Data Structures & Algorithms",
           "Software Engineering & Object-Oriented Programming",
+          "Machine Learning",
           "Database Systems",
-          "Real-Time Operating Systems",
-          "Digital Design",
+          "Real-Time Operating Systems & Networking",
+          "Digital Design & Computer Architecture",
         ],
       },
     };
@@ -48,9 +49,7 @@ class EducationContainer extends Component {
     return (
       <div className="App">
         <div className="education" id="education" data-aos="fade-up">
-          <div className="col-md-2 exp-left">
-            {/* <img src="images/abhishek.jpg" alt="" /> */}
-          </div>
+          <div className="col-md-2 exp-left" />
           <div className="col-md-8 education-w3l">
             <h3
               data-aos="zoom-in"
