@@ -1024,6 +1024,29 @@ ul.top-links li a i.fa:hover {
 }
 /*-- //social-icons --*/
 /*-- comment section --*/
+.single-contact i {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+.single-contact .socials i {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.single-contact {
+  margin-bottom: 50px;
+}
+
+.single-contact h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.single-contact {
+  padding: 5%;
+}
+
 section.comment-w3l {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../images/contact.jpg) no-repeat 0px 0px;

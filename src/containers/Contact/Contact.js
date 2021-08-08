@@ -8,37 +8,44 @@ class ContactContainer extends Component {
         <section className="comment-w3l" id="contact" data-aos="fade-up">
           <div className="container">
             <h3 className="text-center">GET IN TOUCH</h3>
+
             <div
               className="col-lg-12 col-md-12 col-sm-12 comment-agile1"
               data-aos="flip-up"
             >
-              <div style={{ textAlign: "center" }}>
-                <h5 className="col-md-2 col-sm-6">
-                  <span className="fa fa-phone fa-2x"></span>
-                  <br />
-                  <b> +65 9499 6547</b>
-                </h5>
-                <h5 className="col-md-3 col-sm-6">
-                  <span className="fa fa-github fa-2x"></span>{" "}
-                  <a href="https://github.com/iamabhishek98">
-                    <br />
-                    <b>@iamabhishek98</b>
-                  </a>
-                </h5>
-                <h5 className="col-md-3 col-sm-6">
-                  <span className="fa fa-linkedin fa-2x"></span>{" "}
-                  <a href="https://linkedin.com/in/sai-abhishek-karnati/">
-                    <br />
-                    <b> @sai-abhishek-karnati</b>
-                  </a>
-                </h5>
-                <h5 className="col-md-4 col-sm-6">
-                  <span className="fa fa-envelope fa-2x"></span>{" "}
-                  <a href="mailto:saiabhishek.karnati@u.nus.edu">
-                    <br />
-                    <b>saiabhishek.karnati@u.nus.edu</b>
-                  </a>
-                </h5>
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-contact text-center">
+                    <i class="fa fa-github"></i>
+                    <h2>
+                      <a href="https://github.com/iamabhishek98">
+                        @iamabhishek98
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-contact text-center">
+                    <i class="fa fa-envelope"></i>
+                    <h2>
+                      <a href="mailto:saiabhishek.karnati@u.nus.edu">
+                        saiabhishek.karnati@u.nus.edu
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="single-contact text-center">
+                    <i class="fa fa-linkedin"></i>
+                    <div class="socials">
+                      <h2>
+                        <a href="https://linkedin.com/in/sai-abhishek-karnati/">
+                          @sai-abhishek-karnati
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <form action="https://formspree.io/xrgygjwq" method="post">
