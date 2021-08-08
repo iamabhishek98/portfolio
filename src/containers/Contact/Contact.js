@@ -18,9 +18,11 @@ class ContactContainer extends Component {
                   <div class="single-contact text-center">
                     <i class="fa fa-github"></i>
                     <h2>
-                      <a href="https://github.com/iamabhishek98">
-                        @iamabhishek98
-                      </a>
+                      <b>
+                        <a href="https://github.com/iamabhishek98">
+                          @iamabhishek98
+                        </a>
+                      </b>
                     </h2>
                   </div>
                 </div>
@@ -28,9 +30,11 @@ class ContactContainer extends Component {
                   <div class="single-contact text-center">
                     <i class="fa fa-envelope"></i>
                     <h2>
-                      <a href="mailto:saiabhishek.karnati@u.nus.edu">
-                        saiabhishek.karnati@u.nus.edu
-                      </a>
+                      <b>
+                        <a href="mailto:saiabhishek.karnati@u.nus.edu">
+                          saiabhishek.karnati@u.nus.edu
+                        </a>
+                      </b>
                     </h2>
                   </div>
                 </div>
@@ -39,9 +43,11 @@ class ContactContainer extends Component {
                     <i class="fa fa-linkedin"></i>
                     <div class="socials">
                       <h2>
-                        <a href="https://linkedin.com/in/sai-abhishek-karnati/">
-                          @sai-abhishek-karnati
-                        </a>
+                        <b>
+                          <a href="https://linkedin.com/in/sai-abhishek-karnati/">
+                            @sai-abhishek-karnati
+                          </a>
+                        </b>
                       </h2>
                     </div>
                   </div>
