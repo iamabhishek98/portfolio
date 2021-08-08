@@ -11,7 +11,7 @@ class EducationContainer extends Component {
       Name: "national university of singapore",
       Duration: "2018 – Present",
       Details: {
-        Major: "Computer Engineering",
+        "Major:": "Computer Engineering",
         "Expected Graduation Date:": "May 2022",
         "Cumulative Average Point:": "<em>4.25 / 5.00</em>",
         BR: "Relevant Coursework:",

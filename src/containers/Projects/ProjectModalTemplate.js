@@ -129,7 +129,7 @@ const ProjectModal = ({ ProjectDetails, Functions }) => {
               <h3 className="modal-title" style={{ fontSize: "20px" }}>
                 <i
                   onClick={() => window.open(Github, "_blank")}
-                  className="fa fa-github"
+                  className="fa fa-github project-github"
                   aria-hidden="true"
                 ></i>
                 {Link !== undefined && (
@@ -137,7 +137,7 @@ const ProjectModal = ({ ProjectDetails, Functions }) => {
                     <b> </b>
                     <i
                       onClick={() => window.open(Link, "_blank")}
-                      className="fa fa-link"
+                      className="fa fa-link project-link"
                       aria-hidden="true"
                     ></i>
                   </span>

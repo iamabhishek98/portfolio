@@ -4,7 +4,7 @@ class FooterContainer extends Component {
   render() {
     return (
       <div className="App">
-        <div class="w3l_footer" data-aos="fade-up">
+        <div class="w3l_footer">
           <div class="container">
             {/* <!-- <h3>Thanks for visiting my website!</h3>
 			<div class="connect-social">  

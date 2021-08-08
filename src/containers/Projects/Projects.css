@@ -1,10 +1,10 @@
-.fa-github,
-.fa-link {
+.project-github,
+.project-link {
   color: #337ab7;
 }
 
-.fa-github:hover,
-.fa-link:hover {
+.project-github:hover,
+.project-link:hover {
   color: #000;
   cursor: pointer;
 }

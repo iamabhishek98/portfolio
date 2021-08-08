@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Contact.css";
 
 class ContactContainer extends Component {
   render() {
@@ -7,11 +8,39 @@ class ContactContainer extends Component {
         <section className="comment-w3l" id="contact" data-aos="fade-up">
           <div className="container">
             <h3 className="text-center">GET IN TOUCH</h3>
-            <br />
             <div
-              className="col-lg-6 col-md-6 col-sm-6 comment-agile1"
+              className="col-lg-12 col-md-12 col-sm-12 comment-agile1"
               data-aos="flip-up"
             >
+              <div style={{ textAlign: "center" }}>
+                <h5 className="col-md-2 col-sm-6">
+                  <span className="fa fa-phone fa-2x"></span>
+                  <br />
+                  <b> +65 9499 6547</b>
+                </h5>
+                <h5 className="col-md-3 col-sm-6">
+                  <span className="fa fa-github fa-2x"></span>{" "}
+                  <a href="https://github.com/iamabhishek98">
+                    <br />
+                    <b>@iamabhishek98</b>
+                  </a>
+                </h5>
+                <h5 className="col-md-3 col-sm-6">
+                  <span className="fa fa-linkedin fa-2x"></span>{" "}
+                  <a href="https://linkedin.com/in/sai-abhishek-karnati/">
+                    <br />
+                    <b> @sai-abhishek-karnati</b>
+                  </a>
+                </h5>
+                <h5 className="col-md-4 col-sm-6">
+                  <span className="fa fa-envelope fa-2x"></span>{" "}
+                  <a href="mailto:saiabhishek.karnati@u.nus.edu">
+                    <br />
+                    <b>saiabhishek.karnati@u.nus.edu</b>
+                  </a>
+                </h5>
+              </div>
+
               <form action="https://formspree.io/xrgygjwq" method="post">
                 <div className="control-group form-group">
                   <div className="controls">
@@ -69,36 +98,7 @@ class ContactContainer extends Component {
                 </button>
               </form>
             </div>
-            <div
-              className="col-lg-6 col-md-6 col-sm-6 comment-agile2"
-              data-aos="flip-up"
-              style={{ textAlign: "center" }}
-            >
-              <h4>Feel free to contact me for more details</h4>
 
-              <h5>
-                <span className="fa fa-phone"></span>
-                <b> +65 9499 6547</b>
-              </h5>
-              <h5>
-                <span className="fa fa-github"></span>{" "}
-                <a href="https://github.com/iamabhishek98">
-                  <b>@iamabhishek98</b>
-                </a>
-              </h5>
-              <h5>
-                <span className="fa fa-linkedin"></span>{" "}
-                <a href="https://linkedin.com/in/sai-abhishek-karnati/">
-                  <b> @sai-abhishek-karnati</b>
-                </a>
-              </h5>
-              <h5>
-                <span className="fa fa-envelope"></span>{" "}
-                <a href="mailto:saiaabhishek.karnati@u.nus.edu">
-                  <b>saiabhishek.karnati@u.nus.edu</b>
-                </a>
-              </h5>
-            </div>
             <div className="clearfix"></div>
           </div>
         </section>

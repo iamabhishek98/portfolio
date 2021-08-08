@@ -7,7 +7,7 @@ import NavContainer from "./containers/Navigation";
 import SkillsContainer from "./containers/Skills/Skills";
 import ExperiencesContainer from "./containers/Experiences/Experiences";
 import EducationContainer from "./containers/Education/Education";
-import ContactContainer from "./containers/Contact";
+import ContactContainer from "./containers/Contact/Contact";
 import FooterContainer from "./containers/Footer";
 import ProjectsContainer from "./containers/Projects/Projects";
 
