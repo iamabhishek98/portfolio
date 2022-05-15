@@ -31,8 +31,8 @@ class ContactContainer extends Component {
                     <i class="fa fa-envelope"></i>
                     <h2>
                       <b>
-                        <a href="mailto:saiabhishek.karnati@u.nus.edu">
-                          saiabhishek.karnati@u.nus.edu
+                        <a href="mailto:abhishek.karnati@outlook.com">
+                          abhishek.karnati@outlook.com
                         </a>
                       </b>
                     </h2>
